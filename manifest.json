@@ -1,0 +1,45 @@
+{
+  "name": "Zoom remove",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "author": "Panagiotis Moustafellos <pmoust@linux.com>",
+  "description": "Removes unnecessary Zoom tabs",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.zoom.us/j/*",
+        "https://*.zoom.us/s/*"
+      ],
+      "js": [
+        "zoom.js"
+      ]
+    }
+  ],
+  "page_action": {
+    "default_popup": "options.html",
+    "default_icon": {
+      "16": "images/zoom_remove_16.png",
+      "32": "images/zoom_remove_32.png",
+      "48": "images/zoom_remove_48.png",
+      "128": "images/zoom_remove_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/zoom_remove_16.png",
+    "32": "images/zoom_remove_32.png",
+    "48": "images/zoom_remove_48.png",
+    "128": "images/zoom_remove_128.png"
+  }
+}
