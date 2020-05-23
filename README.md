@@ -1,5 +1,8 @@
 # zoom-remove
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/mimjaofnflecmklpiogcoliadefhipme?style=for-the-badge)](https://chrome.google.com/webstore/detail/zoom-remove/mimjaofnflecmklpiogcoliadefhipme)
+
+
 ### A Chrome extension that removes unnecessary Zoom tabs
 
 
